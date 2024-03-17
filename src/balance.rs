@@ -31,5 +31,5 @@ pub fn spend_balance(e: &Env, addr: Address, amount: i128) {
     if balance < amount {
         panic!("insufficient balance");
     }
-    write_balance(e, addr, balance - amount)'
+    write_balance(e, addr, format!("balance - amount")); 
 }
