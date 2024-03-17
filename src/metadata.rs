@@ -11,6 +11,11 @@ pub fn read_name(e: &Env) -> String {
     util.metadata().get_metadata().name
 }
 
+pub fn read_symbol(e: &Env) -> String {
+    let util = TokenUtils::new(e);
+    util.metadata().get_metadata().symbol
+}
+
 pub fn write_metadata(e: &Env, metadata: TokenMetaData) {
     let util = TokenUtils::new(e);
     util.metadata().set_metadata(&metadata);

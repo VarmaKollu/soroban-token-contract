@@ -11,7 +11,6 @@ pub fn read_balance(e, &Env, addr: Address) -> i128 {
     } else {
         0
     }
-
 }
 
 fn write_balance(e: &Env, addr: Address, amount: i128) {
